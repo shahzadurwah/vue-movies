@@ -4,8 +4,8 @@
     <Header class="fixed-top"></Header>
     <div
       class="row  justify-content-center mt-5"
-      style="background: #fff; padding: 3rem 0.5rem; margin-left: 2rem;
-       margin-right: 2rem; border-radius: 20px;
+      style="background: #fff; padding: 3rem 0rem; 
+      border-radius: 20px;
        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;"
       >
       <!-- input field start -->
@@ -43,7 +43,7 @@
         
         <!-- card start -->
         <div class="card" style="width: 30rem;">
-          <img :src="`https://image.tmdb.org/t/p/w500/${d.poster_path}`" class="card-img-top" alt="..." />
+          <img :src="`https://image.tmdb.org/t/p/w500/${d.poster_path}`" class="card-img-top img-fluid" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{{d.original_title}}</h5>
             <p class="card-text">
@@ -114,7 +114,7 @@ body {
  
 }
 img{
-    height: 300px;
+    max-height: 250px;
     object-fit: cover;
   }
   
